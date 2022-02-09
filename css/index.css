@@ -1,0 +1,122 @@
+body {
+    overflow-x: hidden; /* Show vertical scrollbar */
+}
+
+#clickme {
+    position: absolute;
+    top: 80vh;
+}
+
+#clickme-box {
+    width: 20vh;
+    height: 20vh;
+}
+
+#slide-bg {
+    position: absolute;
+    height: 100vh;
+    width: 0;
+    z-index: 10;
+    background-color: white;
+}
+
+#main-show {
+    display: none;
+    opacity: 0;
+}
+
+.vertical-text-center {
+    display: block;
+    top: 50vh;
+}
+
+.bobupdown {
+    animation: bobupdown 2s linear infinite;
+}
+
+.assistant {
+    position: fixed;
+}
+
+@keyframes bobupdown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+    transform: translateY(10px);
+    }
+}
+
+
+#viewing {
+    height: 100vh;
+    display: block;
+}
+
+.fullport {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* 
+
+
+
+SCROLL 
+
+
+
+
+*/
+
+#scroll-e1 {
+    position: fixed;
+}
+
+#scroll-e2 {
+    opacity: 0;
+    top: 0;
+    height: 1500vh;
+}
+
+#scroll-e3 {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    height: 100vh;
+}
+
+#scroll-e4 {
+    position: fixed;
+    top: 90vh;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, 0);
+    height: 100vh;
+}
+
+#scroll-e5 {
+    position: fixed;
+    top: 0;
+    left: 150%;
+    transform: translate(-50%, 0);
+    height: 100vh;
+}
+
+#scroll-e6 {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transform: translate(50%, 0);
+    height: 100vh;
+}
+
+#scroll-e7 {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    height: 500vh;
+    width: 100vw;
+}

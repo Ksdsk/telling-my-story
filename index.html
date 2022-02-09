@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Kang</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.min.js" integrity="sha512-e2WVdoOGqKU97DHH6tYamn+eAwLDpyHKqPy4uSv0aGlwDXZKGwyS27sfiIUT8gpZ88/Lr4UZpbRt93QkGRgpug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.halo.min.js" integrity="sha512-gPRGPaui476r3yjwnkPfJbQYj3PF+1Mg4NLXyBbIaI7KRAGH8oypZnC0PeZ5JpgbaOO20IpVCiGCS3VYinjkqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body onload="setTimeout(startup, 0, 0)">
+
+    <div class="">
+        <!-- Side rect -->
+        <div class="" id="slide-bg">
+            <div id="viewing">
+                <div class="" id="main-show">
+                    <div class="d-flex justify-content-center align-items-center fullport">
+                        <div id="scroll-e1">
+                            <h3 class="montserrat">scroll down slowly</h3>
+                            <div class="d-flex justify-content-center">
+                                <img class="bobupdown" src="img/expand_more_black_24dp.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Immigrated to Canada -->
+                    <div class="bg-primary" id="scroll-e2"></div>
+                    <div class="d-flex justify-content-center align-items-center fullport" id="scroll-e5">
+                        <img class="img-fluid" src="img/canada.svg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center fullport" id="scroll-e3">
+                        <img class="img-fluid" src="img/korea.svg" alt="">
+                    </div>                        
+                    <div class="d-flex justify-content-center align-items-center fullport" id="scroll-e6">
+                        <img style="width: 200px; height: auto;" src="img/airplane.svg" alt="">
+                    </div>   
+                    <div class="bg-white" id="scroll-e7"></div>
+
+
+
+
+                    <!-- subtitle -->
+                    <div class="" id="scroll-e4">
+                        <p class="subtitle montserrat text-white">Daniel was born here, in South Korea.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Halo Dot Intro -->
+        <div class="d-flex justify-content-center align-items-center" id="vanta">
+            <div class="" id="clickme-box" onclick="slide_all_rect()"></div>
+            <h4 class="px-3 monospace c-lightgray text-center" id="clickme"></h4>
+        </div>
+    </div>
+
+
+
+    <script src="js/scrolling.js"></script>
+    <script src="js/pageload.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        VANTA.HALO({
+            el: "#vanta",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            backgroundColor: 0x111111,
+            size: 0.3
+        })
+    </script>
+</body>
+</html>
